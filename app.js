@@ -136,13 +136,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function control(e) {
 		if(e.keyCode === 39) {
-			keyRight();
+			if(resultDisplay.innerHTML == 'You Lose!!!') {
+				e.preventDefault();
+			} else {
+				keyRight();
+			}
 		} else if(e.keyCode === 37) {
-			keyLeft();
+			if(resultDisplay.innerHTML == 'You Lose!!!') {
+				e.preventDefault();
+			} else {
+				keyLeft();
+			}
 		} else if(e.keyCode === 38) {
-			keyUp();
+			if(resultDisplay.innerHTML == 'You Lose!!!') {
+				e.preventDefault();
+			} else {
+				keyUp();
+			}
 		} else if(e.keyCode === 40) {
-			keyDown();
+			if(resultDisplay.innerHTML == 'You Lose!!!') {
+				e.preventDefault();
+			} else {
+				keyDown();
+			}
 		}
 	}
 	document.addEventListener('keyup', control);
@@ -193,7 +209,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 		if(zeros === 0) {
 			resultDisplay.innerHTML = 'You Lose!!!';
-			document.addEventListener('keyup', control);
 		}
 	}
 });
