@@ -1,0 +1,43 @@
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 410px;
+	height: 410px;
+	background-color: blue;
+	border: 1px bold #F0F8FF;
+}
+
+.grid div {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	font-size: 60px;
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid red;
+}
+
+.score-container {
+	width: 410px;
+	text-align: right;
+}
+
+.title {
+	width: 210px;
+	text-shadow: 2px 2px #fafa20;
+	font-size: 50px;
+	text-align: left;
+}
+
+#result {
+	width: 210px;
+	font-size: 20px;
+	text-align: left;
+}
+
+.score-title,#score {
+	width: 210px;
+	font-size: 30px;
+	text-align: right;
+	margin-left: 190px;
+}
